@@ -48,7 +48,7 @@ viz = cdf[['CYLINDERS','ENGINESIZE','CO2EMISSIONS','FUELCONSUMPTION_COMB']]
 # plt.show()
 
 ### CREATING AND TRAINING DATASET
-msk = np.random.rand(len(df)) < 0.8 -> Creates an array or length of the no. of rows of data, and selecting 80% 
+msk = np.random.rand(len(df)) < 0.8 # Creates an array or length of the no. of rows of data, and selecting 80% 
 train = cdf[msk]
 test = cdf[~msk]
 
